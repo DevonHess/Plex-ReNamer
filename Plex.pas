@@ -81,7 +81,8 @@ begin
 			Episode := ReplaceRegEx(Base,
 				'(\(.*?\)|\[.*?\]|\{.*?\})'
 				+'|(\bse?\d+|season.*?\d+)|par(ts)?\d+'
-				+'|(v\d+)|(19|20)\d\d|(\d{3,4}p)|[24]K|[hx]\.?\d{3}|[DB]D.\d\.\d',
+				+'|(v\d+)|(19|20)\d\d|(\d{3,4}p)|[24]K'
+				+'|[hx]\.?\d{3}|[DB]DP?.\d\.\d',
 				'', False, True);
 			Episode := ReplaceRegEx(Episode,
 				'.*?0*(\d+)\D*$', '$1', False, True);
